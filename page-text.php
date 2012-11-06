@@ -10,7 +10,7 @@ Template Name: Text Page
 					<?php the_content(); ?>
 			<?php endwhile; ?>
 
-			<?php marty_get_menu($post->ID,'subnav'); ?>
+			<?php carolyn_get_menu($post->ID,'subnav'); ?>
 
 		<?php else : ?>
 			<p>Page not found.</p>
