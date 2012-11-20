@@ -63,29 +63,29 @@ position: relative;
 #slidecontrols span {display: none}
 
 #slidecontrols a {display: inline-block;}
-#slidecontrols a.prev { width: 12px; height: 12px; background: url('images/controls.png') 0 0;}
-#slidecontrols a.thumbs { width: 13px; height: 12px; background: url('images/controls.png') -13px 0; margin: 0 1em;}
-#slidecontrols a.next { width: 12px; height: 12px; background: url('images/controls.png') -27px 0;}
+#slidecontrols a.prev { width: 12px; height: 12px; background: url('../images/controls.png') 0 0;}
+#slidecontrols a.thumbs { width: 13px; height: 12px; background: url('../images/controls.png') -13px 0; margin: 0 1em;}
+#slidecontrols a.next { width: 12px; height: 12px; background: url('../images/controls.png') -27px 0;}
 
-#slidecontrols a.prev:hover { background: url('images/controls.png') 0 -12px;}
-#slidecontrols a.thumbs:hover { background: url('images/controls.png') -13px -12px;}
-#slidecontrols a.next:hover { background: url('images/controls.png') -27px -12px;}
+#slidecontrols a.prev:hover { background: url('../images/controls.png') 0 -12px;}
+#slidecontrols a.thumbs:hover { background: url('../images/controls.png') -13px -12px;}
+#slidecontrols a.next:hover { background: url('../images/controls.png') -27px -12px;}
 
-#slidecontrols a.prev:active { background: url('images/controls.png') 0 -36px;}
-#slidecontrols a.thumbs:active { background: url('images/controls.png') -13px -36px;}
-#slidecontrols a.next:active { background: url('images/controls.png') -27px -36px;}
+#slidecontrols a.prev:active { background: url('../images/controls.png') 0 -36px;}
+#slidecontrols a.thumbs:active { background: url('../images/controls.png') -13px -36px;}
+#slidecontrols a.next:active { background: url('../images/controls.png') -27px -36px;}
 
-#slidecontrols a.prev.inactive { background: url('images/controls.png') 0 -24px;}
-#slidecontrols a.thumbs.inactive { background: url('images/controls.png') -13px -24px;}
-#slidecontrols a.next.inactive { background: url('images/controls.png') -27px -24px;}
-
-
-
-a.cursornext { cursor: url("images/cursor-next.cur"), pointer; }
-a.cursorprev { cursor: url("images/cursor-prev.cur"), pointer; }
+#slidecontrols a.prev.inactive { background: url('../images/controls.png') 0 -24px;}
+#slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
+#slidecontrols a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
 
-a.next.inactive { background: url('images/controls.png') -27px -24px;}
+
+a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
+a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
+
+
+a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
 .thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }
