@@ -12,7 +12,7 @@ function carolyn_theme_scripts_method() {
  	if ( isset( $options['skincss'] ) && $options['skincss'] !== '' ) :
 	    $skinstyle = get_template_directory_uri() . '/skins/'. $options['skincss'] . '.css'; 
 	else :
-	    $skinstyle = get_template_directory_uri() . '/skins/carolyndrake.css'; 
+	    $skinstyle = get_template_directory_uri() . '/skins/istanbul.css'; 
 	endif;
 
     wp_register_style('skinstyle',$skinstyle);
@@ -78,16 +78,16 @@ function carolyn_customize_register($wp_customize) {
 			<select <?php $this->link(); ?>>
 				<?php $skins = array(); ?>
 				<?php $skins[] = array(
-					'slug'           => 'carolyndrake',
-					'nicename'     => 'Carolyn Drake',
+					'slug'           => 'istanbul',
+					'nicename'     => 'Istanbul',
 				); ?>
 				<?php $skins[] = array(
-					'slug'           => 'samueljames',
-					'nicename'     => 'Samuel James',
+					'slug'           => 'lagos',
+					'nicename'     => 'Lagos',
 				); ?>
 				<?php $skins[] = array(
-					'slug'           => 'honoriastarbuck',
-					'nicename'     => 'Honoria Starbuck',
+					'slug'           => 'payneandgrover',
+					'nicename'     => 'Payne and Grover',
 				); ?>
 
 				<?php foreach ($skins as $skin ) : ?>
