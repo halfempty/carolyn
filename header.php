@@ -14,6 +14,8 @@
 		if ( $paged >= 2 || $page >= 2 )
 			echo ' &mdash; ' . sprintf( __( 'Page %s' ), max( $paged, $page ) );
 		?></title>
+	
+		<?php wp_head(); ?>
 
 		<?php $options = get_option('carolyn_theme_options'); ?>
 
@@ -24,8 +26,6 @@
 				<?php echo $options['typekit_css'] ?>
 			</style>
 		<?php endif ?>
-	
-		<?php wp_head(); ?>
 
 </head>
 <body>
