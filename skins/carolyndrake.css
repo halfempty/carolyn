@@ -1,0 +1,93 @@
+/*  
+Skin Name: Carolyn Drake
+*/
+
+
+body {text-align: left; background: #fff; color: #000; font-size: 12px; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
+
+h1 { font-size: 12px; margin: 0; float: left; text-transform: uppercase; font-weight: normal;}
+h2 { font-size: 12px; margin-bottom: 2em;}
+h2 span {font-weight: lighter; padding-left: .5em;}
+
+a {color: #000; text-decoration: none;}
+a:hover {color: #666;}
+a img {border: 0;}
+
+.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #3C6; text-transform: uppercase; }
+
+#header { padding: 0 2em 2em 2em; overflow: hidden; margin: auto; }
+
+#header ul { padding: 0; list-style: none; }
+#header ul li {margin: 0; display: inline; }
+
+#header ul { margin: 0 200px; text-align: center; }
+#header ul li {padding: 0 .8em; }
+.subnav ul li a { padding: .5em 0 .5em 1em; }
+
+.subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
+.subnav ul {list-style: none; margin: 0; padding: 0; }
+.subnav ul li { margin: 0; padding: 0; display: inline;}
+.subnav ul li a { display: inline-block; padding: .5em; }
+
+#content {}
+
+.info, .blog  { width: 500px; margin: auto; line-height: 2; }
+
+.blog .post {overflow: hidden;}
+.separator { width: 100px; margin: 50px auto; border-top: 1px solid #000; display: block;}
+
+.alignright { display: inline; float: right; margin: 0 0 1em 2em}
+.alignleft { display: inline; float: left; margin: 0 2em 1em 0}
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.credit {font-size: .8em; float: left; padding-top: 1em;}
+.credit a {color: #666;}
+	
+.simplepage {width: 500px; margin: auto; line-height: 2;}
+.randomimage {text-align: center; }
+
+/* Slideshow*/
+
+#gallerywrapper, .gallery-fade {
+overflow: hidden;
+margin: auto;
+position: relative;
+}
+
+.thumbnails {padding-bottom: 3em; width: 870px; }
+
+.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
+.description p {margin: .5em 0 0 0; font-size: 11px;}
+
+#slidecontrols {text-align: center;}
+#slidecontrols span {display: none}
+
+#slidecontrols a {display: inline-block;}
+#slidecontrols a.prev { width: 12px; height: 12px; background: url('images/controls.png') 0 0;}
+#slidecontrols a.thumbs { width: 13px; height: 12px; background: url('images/controls.png') -13px 0; margin: 0 1em;}
+#slidecontrols a.next { width: 12px; height: 12px; background: url('images/controls.png') -27px 0;}
+
+#slidecontrols a.prev:hover { background: url('images/controls.png') 0 -12px;}
+#slidecontrols a.thumbs:hover { background: url('images/controls.png') -13px -12px;}
+#slidecontrols a.next:hover { background: url('images/controls.png') -27px -12px;}
+
+#slidecontrols a.prev:active { background: url('images/controls.png') 0 -36px;}
+#slidecontrols a.thumbs:active { background: url('images/controls.png') -13px -36px;}
+#slidecontrols a.next:active { background: url('images/controls.png') -27px -36px;}
+
+#slidecontrols a.prev.inactive { background: url('images/controls.png') 0 -24px;}
+#slidecontrols a.thumbs.inactive { background: url('images/controls.png') -13px -24px;}
+#slidecontrols a.next.inactive { background: url('images/controls.png') -27px -24px;}
+
+
+
+a.cursornext { cursor: url("images/cursor-next.cur"), pointer; }
+a.cursorprev { cursor: url("images/cursor-prev.cur"), pointer; }
+
+
+a.next.inactive { background: url('images/controls.png') -27px -24px;}
+
+.thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
+.thumbnails .thumb {display: inline; cursor: pointer; }
+.thumbnails .thumb img {border: .5em solid #fff;}
+	
