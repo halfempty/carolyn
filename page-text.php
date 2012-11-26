@@ -10,11 +10,11 @@ Template Name: Text Page
 					<?php the_content(); ?>
 			<?php endwhile; ?>
 
-			<?php carolyn_get_menu($post->ID,'subnav'); ?>
-
 		<?php else : ?>
 			<p>Page not found.</p>
 		<?php endif; ?>
 	</div>
+
+	<?php carolyn_get_menu($post->ID,'subnav'); ?>
 
 <?php get_footer(); ?>

@@ -3,38 +3,36 @@ Skin Name: Lagos
 */
 
 
-body {text-align: left; background: #fff; color: #000; font-size: 16px; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
+body {text-align: left; background: #fff; color: #333; font-size: 12px; line-height: 1.5; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
 
-h1 { font-size: 16px; margin: 0; float: left; text-transform: uppercase; }
-h2 { font-size: 16px; margin-bottom: 2em;}
+h1 { font-size: 12px; margin: 0; float: left; text-transform: uppercase; }
+h2 { font-size: 1em; margin-bottom: 1em;}
 h2 span {font-weight: lighter; padding-left: .5em;}
 
-a {color: #000; text-decoration: none;}
-a:hover {color: #666;}
+a {color: #333; text-decoration: none;}
+a:hover { text-decoration: underline;}
 a img {border: 0;}
 
-.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a {color: #000; font-weight: bold; }
+.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { text-decoration: underline; }
 
 
-#header { padding: 0 2em 2em 2em; overflow: hidden; margin: auto; width: 800px;}
+#header { padding: 0 2em 1em 2em; overflow: hidden; margin: auto; width: 800px;}
 
 #header ul { padding: 0; list-style: none; }
 #header ul li {margin: 0; display: inline; }
 
 #header ul { margin: 0; text-align: right; }
 #header ul li {padding: 0 0 0 1.6em; }
-.subnav ul li a { padding: .5em; }
 
-
-
-.subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
+.subnav {clear: both; text-align: center; overflow: hidden;}
 .subnav ul {list-style: none; margin: 0; padding: 0; }
 .subnav ul li { margin: 0; padding: 0; display: inline;}
 .subnav ul li a { display: inline-block; padding: .5em; }
 
+
 #content {}
 
-.info, .blog  { width: 500px; margin: auto; line-height: 2; }
+.info, .blog  { width: 500px; padding: 3em 0; margin: auto; }
 
 .blog .post {overflow: hidden;}
 .separator { width: 100px; margin: 50px auto; border-top: 1px solid #000; display: block;}
@@ -44,7 +42,6 @@ a img {border: 0;}
 .aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
 
 .credit {font-size: .8em; float: left; padding-top: 1em;}
-.credit a {color: #666;}
 	
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
@@ -59,10 +56,9 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
-.description p {margin: .5em 0 0 0; font-size: 11px;}
+.description p {margin: 1em 0; }
 
-#slidecontrols {text-align: center;}
+#slidecontrols {text-align: center; margin: 1em 0;}
 #slidecontrols span {display: none}
 
 #slidecontrols a {display: inline-block;}
@@ -74,9 +70,11 @@ position: relative;
 #slidecontrols a.thumbs:hover { background: url('../images/controls.png') -13px -12px;}
 #slidecontrols a.next:hover { background: url('../images/controls.png') -27px -12px;}
 
+/*
 #slidecontrols a.prev:active { background: url('../images/controls.png') 0 -36px;}
 #slidecontrols a.thumbs:active { background: url('../images/controls.png') -13px -36px;}
 #slidecontrols a.next:active { background: url('../images/controls.png') -27px -36px;}
+*/
 
 #slidecontrols a.prev.inactive { background: url('../images/controls.png') 0 -24px;}
 #slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
