@@ -3,20 +3,20 @@ Skin Name: Lagos
 */
 
 
-body {text-align: left; background: #fff; color: #333; font-size: 12px; line-height: 1.5; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
+body {text-align: left; background: #fff; color: #828487; font-size: 12px; line-height: 1.8; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
 
 h1 { font-size: 12px; margin: 0; float: left; text-transform: uppercase; }
-h2 { font-size: 1em; margin-bottom: 1em;}
-h2 span {font-weight: lighter; padding-left: .5em;}
+h1 a { color: #494949 }
+h2 { display: none;}
 
-a {color: #333; text-decoration: none;}
-a:hover { text-decoration: underline;}
+a {color: #727272; text-decoration: none;}
+a:hover { color: #494949}
 a img {border: 0;}
 
-.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { text-decoration: underline; }
+.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #494949; }
 
 
-#header { padding: 0 2em 1em 2em; overflow: hidden; margin: auto; width: 800px;}
+#header { padding: 0 0 1em 0; overflow: hidden; margin: auto auto 1.5em auto; width: 800px; border-bottom: 1px solid #ccc; }
 
 #header ul { padding: 0; list-style: none; }
 #header ul li {margin: 0; display: inline; }
@@ -27,15 +27,17 @@ a img {border: 0;}
 .subnav {clear: both; text-align: center; overflow: hidden;}
 .subnav ul {list-style: none; margin: 0; padding: 0; }
 .subnav ul li { margin: 0; padding: 0; display: inline;}
-.subnav ul li a { display: inline-block; padding: .5em; }
+.subnav ul li a { display: inline-block; padding: 0 .5em; }
 
 
 #content {}
 
-.info, .blog  { width: 500px; padding: 3em 0; margin: auto; }
+.info  { width: 500px; padding: 3em 0; margin: auto; font-family: georgia; }
+
+.blog  { width: 650px; padding: 3em 0; margin: auto; font-family: georgia; }
 
 .blog .post {overflow: hidden;}
-.separator { width: 100px; margin: 50px auto; border-top: 1px solid #000; display: block;}
+.separator { margin: 1em 0; border-top: 1px solid #ccc; display: block;}
 
 .alignright { display: inline; float: right; margin: 0 0 1em 2em}
 .alignleft { display: inline; float: left; margin: 0 2em 1em 0}
@@ -48,9 +50,6 @@ a img {border: 0;}
 
 /* Slideshow*/
 
-.gallerycontent { margin-left: 3em;}
-
-
 #gallerywrapper, .gallery-fade {
 overflow: hidden;
 margin: auto;
@@ -59,9 +58,9 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description p {margin: 1em 0; }
+.description p {margin: 1em 0 0 0; font-size: 10px; color: #939598; }
 
-#slidecontrols {text-align: center; margin: 1em 0;}
+#slidecontrols {text-align: center; margin: 1.1em 0 .55em 0;}
 #slidecontrols span {display: none}
 
 #slidecontrols a {display: inline-block;}
@@ -93,5 +92,5 @@ a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
 .thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }
-.thumbnails .thumb img {border: .5em solid #fff;}
+.thumbnails .thumb img {border-right: 5px solid #fff; border-bottom: 5px solid #fff; border-left: 5px solid #fff;}
 	
