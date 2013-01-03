@@ -5,22 +5,30 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?php 
-		wp_title( '|', true, 'right' );
+		wp_title( '&mdash;', true, 'right' );
 		bloginfo( 'name' ); 
 		$site_description = get_bloginfo( 'description', 'display' );
 
 		if ( $site_description && ( is_home() || is_front_page() ) )
 			echo " $site_description";
 		if ( $paged >= 2 || $page >= 2 )
-			echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+			echo ' &mdash; ' . sprintf( __( 'Page %s' ), max( $paged, $page ) );
 		?></title>
+	
+		<?php wp_head(); ?>
 
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+		<?php $options = get_option('carolyn_theme_options'); ?>
 
-<script type="text/javascript" src="http://fast.fonts.com/jsapi/dcbd66df-ada5-4c9f-851d-fa791f21916b.js"></script>
-	<?php wp_head(); ?>
+		<?php if ( isset( $options['typekit_js'] ) && $options['typekit_js'] !== '' ) echo $options['typekit_js'] ?>
+
+		<?php if ( isset( $options['typekit_css'] ) && $options['typekit_css'] !== '' ) : ?>
+			<style>			
+				<?php echo $options['typekit_css'] ?>
+			</style>
+		<?php endif ?>
+
 </head>
 <body>
 <div class="page">	
 
-<div id="content">
+<div id="content" class="blank">

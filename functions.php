@@ -86,6 +86,10 @@ function carolyn_customize_register($wp_customize) {
 					'nicename'     => 'Lagos',
 				); ?>
 				<?php $skins[] = array(
+					'slug'           => 'montreal',
+					'nicename'     => 'Montreal',
+				); ?>
+				<?php $skins[] = array(
 					'slug'           => 'payneandgrover',
 					'nicename'     => 'Payne and Grover',
 				); ?>

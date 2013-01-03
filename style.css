@@ -3,4 +3,10 @@ Theme Name: Carolyn
 Author: Marty Spellerberg
 Author URI: http://www.martyspellerberg.com/
 */
-	
+
+a {
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	}

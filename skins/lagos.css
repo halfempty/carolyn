@@ -48,6 +48,9 @@ a img {border: 0;}
 
 /* Slideshow*/
 
+.gallerycontent { margin-left: 3em;}
+
+
 #gallerywrapper, .gallery-fade {
 overflow: hidden;
 margin: auto;
