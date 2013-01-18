@@ -59,7 +59,7 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
+.description {text-align: right; color: #999; margin: .5em 0 1em 0;}
 .description p {margin: .5em 0 0 0; font-size: 11px;}
 
 #slidecontrols {text-align: center;}
@@ -82,15 +82,9 @@ position: relative;
 #slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
 #slidecontrols a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
-
-
-a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
-a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
-
-
 a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
-.thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
+.thumbnails {width: 870px; margin: auto; overflow: hidden; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }
 .thumbnails .thumb img {border: .5em solid #fff;}
 	

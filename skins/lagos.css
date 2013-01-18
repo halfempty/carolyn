@@ -82,15 +82,9 @@ position: relative;
 #slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
 #slidecontrols a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
-
-
-a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
-a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
-
-
 a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
-.thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
+.thumbnails {width: 870px; margin: auto; overflow: hidden; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }
 .thumbnails .thumb img {border-right: 5px solid #fff; border-bottom: 5px solid #fff; border-left: 5px solid #fff;}
 	

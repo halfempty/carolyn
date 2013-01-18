@@ -81,12 +81,6 @@ position: relative;
 #slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
 #slidecontrols a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
-
-
-a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
-a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
-
-
 a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
 .thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
