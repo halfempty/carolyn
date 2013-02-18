@@ -59,7 +59,7 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
+.description {text-align: right; color: #999; margin: .5em 0 1em 0;}
 .description p {margin: .5em 0 0 0; font-size: 11px;}
 
 #slidecontrols {text-align: center;}
