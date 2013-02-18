@@ -63,10 +63,8 @@ position: relative;
 
 #slidecontrols {text-align: center;}
 
-
 a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
 a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
-
 
 .thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }
