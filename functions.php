@@ -93,7 +93,10 @@ function carolyn_customize_register($wp_customize) {
 					'slug'           => 'payneandgrover',
 					'nicename'     => 'Payne and Grover',
 				); ?>
-
+				<?php $skins[] = array(
+					'slug'           => 'delhi',
+					'nicename'     => 'Delhi',
+				); ?>
 				<?php foreach ($skins as $skin ) : ?>
 				<option value="<?php echo $skin['slug'] ?>"
 					<?php if ( $skin['slug'] == esc_textarea( $this->value() ) ) echo ' selected="selected"'; ?>
