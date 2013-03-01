@@ -3,6 +3,19 @@ add_action('init', 'register_custom_menu');
 
 function carolyn_theme_scripts_method() {
 
+	//JS
+	// Screenfull
+	$screenfull = get_template_directory_uri() . '/js/screenfull.min.js';
+	wp_register_script('screenfull',$screenfull);
+	wp_enqueue_script( 'screenfull',array('jquery'));
+
+	// Theme
+	$themejs = get_template_directory_uri() . '/js/theme.js';
+	wp_register_script('themejs',$themejs);
+	wp_enqueue_script( 'themejs',array('screenfull','jquery'));
+	
+
+	// Styles
     $defaultstyle = get_bloginfo('stylesheet_url'); 
     wp_register_style('defaultstyle',$defaultstyle);
     wp_enqueue_style( 'defaultstyle');

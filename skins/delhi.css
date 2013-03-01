@@ -48,6 +48,9 @@ a img {border: 0;}
 
 .blank .gallerycontent {text-align: center; padding-bottom: 3em;}
 
+.fullscreen { border-left: 1px solid #ccc; padding-left: 1em !important}
+.fullscreen a {padding-left: 1.5em; background: url(../images/fullscreen.png) no-repeat center left;}
+
 /* Slideshow*/
 
 #gallerywrapper, .gallery-fade {
@@ -58,7 +61,7 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
+.description {text-align: right; color: #999; margin: .5em 0 1em 0;}
 .description p {margin: .5em 0 0 0; font-size: 11px;}
 
 #slidecontrols {text-align: center;}
