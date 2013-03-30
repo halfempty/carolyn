@@ -3,31 +3,41 @@ Skin Name: Delhi
 */
 
 
-body {text-align: left; background: #fff; color: #333; font-size: 14px; font-family: "franklin-gothic-urw", Helvetica, sans-serif; margin: 0; padding: 2.5em 0;}
+body {text-align: left; background: #fff; color: #666; font-size: 14px; font-family: "franklin-gothic-urw", Helvetica, sans-serif; margin: 0; padding: 0;}
 
-h1 { font-size: 14px; margin: 0 1em 0 0;  text-transform: uppercase; font-weight: normal; display: inline;}
+.page {padding: 2.5em 0; position: relative;}
+
+h1 { font-size: 18px; margin-bottom: 2em; padding-bottom: .5em; text-transform: uppercase; font-weight: normal; display: inline-block; border-bottom: 1px solid #999;}
 h2 { font-size: 14px; margin-bottom: 2em;}
 h2 span {font-weight: lighter; padding-left: .5em;}
 
-a {color: #999; text-decoration: none;}
+a {color: #CC9933; text-decoration: none;}
 a:hover {color: #333;}
 a img {border: 0;}
 
-.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #CC9933;}
+.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #666;}
 
-#header { padding: 0 2em 3em 2em; overflow: hidden; margin: auto; text-align: center;}
-#header .menu-navigation-container {display: inline}
+#header { padding: 0 2em 4em 2em; overflow: hidden; margin: auto; text-align: center;}
+#header .menu-navigation-container {}
 
 #header ul { padding: 0; list-style: none; display: inline}
 #header ul li {margin: 0; display: inline; }
 
 #header ul li {padding: 0 .8em; }
+
+.line { border-left: 1px solid #999; padding-left: 2em !important; margin-left: 1em !important; }
+
+.fullscreen { position: absolute; top: 0; right: 0; padding: 1em !important; display: block;}
+.fullscreen a {padding-right: 1.5em; background: url(../images/fullscreen.png) no-repeat center right; color: #999}
+
 .subnav ul li a { padding: .5em 0 .5em 1em; }
 
 .subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
 .subnav ul {list-style: none; margin: 0; padding: 0; }
 .subnav ul li { margin: 0; padding: 0; display: inline;}
 .subnav ul li a { display: inline-block; padding: .5em; }
+
+
 
 #content {}
 
@@ -41,15 +51,15 @@ a img {border: 0;}
 .aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
 
 .credit {font-size: .8em; float: left; padding-top: 1em;}
-.credit a {color: #666;}
 	
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
 
 .blank .gallerycontent {text-align: center; padding-bottom: 3em;}
 
-.fullscreen { border-left: 1px solid #ccc; padding-left: 1em !important}
-.fullscreen a {padding-left: 1.5em; background: url(../images/fullscreen.png) no-repeat center left;}
+
+
+
 
 /* Slideshow*/
 
@@ -59,7 +69,10 @@ margin: auto;
 position: relative;
 }
 
+
+
 .thumbnails {padding-bottom: 3em; width: 870px; }
+
 
 .description {text-align: right; color: #999; margin: .5em 0 1em 0;}
 .description p {margin: .5em 0 0 0; font-size: 11px;}
@@ -77,3 +90,5 @@ a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
 .masonrythumbs .thumbnail {float: left; width: 250px; text-align: center; padding: 0 20px 15px 20px;}
 .masonrythumbs .thumbnail h3 {}
 .masonrythumbs .thumbnail h3 a {font-weight: normal;}
+
+.spreadslide .imagewrap {float: left; padding-right: 2em;}
