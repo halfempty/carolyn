@@ -57,6 +57,8 @@ margin: auto;
 position: relative;
 }
 
+.imagewrap { margin: auto;}
+
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
 .description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
