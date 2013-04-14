@@ -1,0 +1,111 @@
+/*  
+Skin Name: Uganda
+
+font-family: "minion-pro-display";
+font-family: "minion-pro-caption";
+
+*/
+
+
+body {text-align: left; background: #fff; color: #333; font-size: 12px; font-family: 'minion-pro-caption', serif; margin: 0; padding: 0; line-height: 1.4;  text-align: justify;}
+
+h1 { font-size: 30px; width: 5.5em; margin: 0; text-transform: lowercase; font-weight: normal; display: block; float: left;}
+h1 a {color: #000;}
+h2 { font-size: 16px; margin-bottom: 2em;}
+h2 span {font-weight: lighter; padding-left: .5em;}
+
+a {color: #ccc; text-decoration: none;}
+a:hover {color: #000;}
+a img {border: 0;}
+
+
+.page {padding: 4em;}
+
+.current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #000; }
+
+
+#header { padding: 0 0 .5em 0; overflow: hidden; margin: auto; text-transform: lowercase; font-size: 24px; font-family: 'minion-pro-display', serif;}
+#header .menu-portfolio-container {float: left; padding-top: 7px;}
+
+#header ul { padding: 0; list-style: none; display: inline}
+#header ul li {margin: 0; display: inline; }
+
+#header ul li {padding: 0 1em 0 0; }
+
+.menu-info-container {float: left; width: 165px;}
+.menu-info-container ul {margin: 0; padding: 0; list-style: none; }
+.menu-info-container li {margin: 0; padding: 0;  text-transform: lowercase; font-size: 24px; font-family: 'minion-pro-display', serif; }
+
+.subnav ul li a { padding: 0; }
+
+.subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
+.subnav ul {list-style: none; margin: 0; padding: 0; }
+.subnav ul li { margin: 0; padding: 0; display: inline;}
+.subnav ul li a { display: inline-block; padding: .5em; }
+
+#content {}
+
+.randomimage {float: left;}
+
+.info, .blog  { width: 500px; float: left;}
+
+.blog .post {overflow: hidden;}
+.blog h2 {display: none;}
+.separator { width: 100px; margin: 2em 0; border-top: 1px solid #000; display: block;}
+
+.alignright { display: inline; float: right; margin: 0 0 1em 2em}
+.alignleft { display: inline; float: left; margin: 0 2em 1em 0}
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.credit {font-size: .8em; float: left; padding-top: 1em;}
+.credit a {color: #666;}
+	
+.simplepage {width: 500px; margin: auto; line-height: 2;}
+.randomimage {text-align: center; }
+
+.spreadslide p {margin-top: 0;}
+
+.blank .gallerycontent {text-align: center; padding-bottom: 3em;}
+
+/* Slideshow*/
+
+#gallerywrapper {margin-left: 165px;}
+
+#gallerywrapper, .gallery-fade {
+overflow: hidden;
+position: relative;
+}
+
+.imagewrap {float: left; margin-right: 2em;}
+
+
+
+.description {text-align: left; color: #999; margin: .5em 0;}
+.description p {margin: .5em 0 0 0; font-size: 11px;}
+
+#slidecontrols {  margin-left: 165px;}
+
+#slidecontrols span {display: none}
+
+#slidecontrols a {display: inline-block;}
+
+#slidecontrols a.prev { width: 10px; height: 9px; background: url('../images/arrows-uganda.svg') -7px -30px;}
+#slidecontrols a.thumbs { width: 9px; height: 9px; background: url('../images/arrows-uganda.svg') -31px -30px; margin: 0 .1em;}
+#slidecontrols a.next { width: 10px; height: 9px; background: url('../images/arrows-uganda.svg') -54px -30px;}
+
+#slidecontrols a.prev:hover { background: url('../images/arrows-uganda.svg') -7px -52px;}
+#slidecontrols a.thumbs:hover { background: url('../images/arrows-uganda.svg') -31px -52px;}
+#slidecontrols a.next:hover { background: url('../images/arrows-uganda.svg') -54px -52px;}
+
+#slidecontrols a.prev.inactive { background: url('../images/arrows-uganda.svg') -7px -8px;}
+#slidecontrols a.thumbs.inactive { background: url('../images/arrows-uganda.svg') -31px -8px;}
+#slidecontrols a.next.inactive { background: url('../images/arrows-uganda.svg') -54px -8px;}
+
+
+.thumbnails {padding-bottom: 3em; width: 800px; margin: auto; overflow: hidden; display: none; float: left;}
+.thumbnails .thumb {float: left; margin: 0 1em 1em 0; cursor: pointer; }
+	
+.masonrythumbs {margin: auto; width: 870px;}
+.masonrythumbs .thumbnail {float: left; width: 250px; text-align: center; padding: 0 20px 15px 20px;}
+.masonrythumbs .thumbnail h3 {}
+.masonrythumbs .thumbnail h3 a {font-weight: normal;}

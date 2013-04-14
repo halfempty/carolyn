@@ -50,6 +50,7 @@ a img {border: 0;}
 
 .gallerycontent { margin-left: 3em;}
 
+.imagewrap { margin: auto;}
 
 #gallerywrapper, .gallery-fade {
 overflow: hidden;
