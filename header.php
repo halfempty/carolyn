@@ -15,9 +15,16 @@
 			echo ' &mdash; ' . sprintf( __( 'Page %s' ), max( $paged, $page ) );
 		?></title>
 	
+
+
 		<?php wp_head(); ?>
 
 		<?php $options = get_option('carolyn_theme_options'); ?>
+
+
+		<?php if ( isset( $options['viewport'] ) && $options['viewport'] !== '' ) : ?>
+			<meta name="viewport" content="width=<?php echo $options['viewport']; ?>"> 
+		<?php endif; ?>
 
 		<?php if ( isset( $options['typekit_js'] ) && $options['typekit_js'] !== '' ) echo $options['typekit_js'] ?>
 
@@ -40,3 +47,6 @@
 	</div>
 
 <div id="content">
+
+		<?php if ( isset( $options['infonav'] ) && $options['infonav'] ) wp_nav_menu( array('theme_location' => 'info' )); ?>
+	

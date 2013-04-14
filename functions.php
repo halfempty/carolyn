@@ -41,7 +41,8 @@ add_action('wp_enqueue_scripts', 'carolyn_theme_scripts_method');
 
 
 function register_custom_menu() {
-	register_nav_menu('navigation', __('Navigation Menu'));
+	register_nav_menu('navigation', __('Portfolio Menu'));
+	register_nav_menu('info', __('Info Menu'));
 }
 
 
@@ -110,6 +111,11 @@ function carolyn_customize_register($wp_customize) {
 					'slug'           => 'delhi',
 					'nicename'     => 'Delhi',
 				); ?>
+				<?php $skins[] = array(
+					'slug'           => 'uganda',
+					'nicename'     => 'Uganda',
+				); ?>
+
 				<?php foreach ($skins as $skin ) : ?>
 				<option value="<?php echo $skin['slug'] ?>"
 					<?php if ( $skin['slug'] == esc_textarea( $this->value() ) ) echo ' selected="selected"'; ?>
@@ -141,6 +147,22 @@ function carolyn_customize_register($wp_customize) {
 		'type'     => 'text',
 	) ) );
 
+
+	$wp_customize->add_setting( 'carolyn_theme_options[infonav]', array(
+		'type'           => 'option',
+		'capability'     => 'edit_theme_options',
+		'transport'      => 'postMessage',
+	) );
+	
+	$wp_customize->add_control( 'infonav', array(
+	    'settings' => 'carolyn_theme_options[infonav]',
+	    'label'    => __( 'Use second nav bar' ),
+	    'section'  => 'carolyn_skin',
+	    'type'     => 'checkbox',
+	) );
+
+	
+
 	$wp_customize->add_setting( 'carolyn_theme_options[typekit_js]', array(
 		'type'           => 'option',
 		'capability'     => 'edit_theme_options',
@@ -163,6 +185,19 @@ function carolyn_customize_register($wp_customize) {
 	$wp_customize->add_control( new Carolyn_Textarea_Control( $wp_customize, 'typekit_css', array(
 		'settings' => 'carolyn_theme_options[typekit_css]',
 		'label'    => __( 'Fonts CSS' ),
+		'section'  => 'carolyn_skin',
+	) ) );
+
+
+	$wp_customize->add_setting( 'carolyn_theme_options[viewport]', array(
+		'type'           => 'option',
+		'capability'     => 'edit_theme_options',
+		'transport'      => 'postMessage',
+	) );
+	
+	$wp_customize->add_control( new Carolyn_Textarea_Control( $wp_customize, 'viewport', array(
+		'settings' => 'carolyn_theme_options[viewport]',
+		'label'    => __( 'Viewport' ),
 		'section'  => 'carolyn_skin',
 	) ) );
 
