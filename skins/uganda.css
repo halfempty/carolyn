@@ -87,19 +87,19 @@ position: relative;
 
 #slidecontrols span {display: none}
 
-#slidecontrols a {display: inline-block;}
+#slidecontrols a {display: block; float: left;}
 
-#slidecontrols a.prev { width: 10px; height: 9px; background: url('../images/arrows-uganda.svg') -7px -30px;}
-#slidecontrols a.thumbs { width: 9px; height: 9px; background: url('../images/arrows-uganda.svg') -31px -30px; margin: 0 .1em;}
-#slidecontrols a.next { width: 10px; height: 9px; background: url('../images/arrows-uganda.svg') -54px -30px;}
+#slidecontrols a.prev { width: 6px; height: 9px; background: url('../images/arrows-uganda.svg') -7px -30px;}
+#slidecontrols a.thumbs { width: 9px; height: 9px; background: url('../images/arrows-uganda.svg') -31px -30px; margin: 0 .3em;}
+#slidecontrols a.next { width: 6px; height: 9px; background: url('../images/arrows-uganda.svg') -57px -30px;}
 
 #slidecontrols a.prev:hover { background: url('../images/arrows-uganda.svg') -7px -52px;}
 #slidecontrols a.thumbs:hover { background: url('../images/arrows-uganda.svg') -31px -52px;}
-#slidecontrols a.next:hover { background: url('../images/arrows-uganda.svg') -54px -52px;}
+#slidecontrols a.next:hover { background: url('../images/arrows-uganda.svg') -57px -52px;}
 
 #slidecontrols a.prev.inactive { background: url('../images/arrows-uganda.svg') -7px -8px;}
 #slidecontrols a.thumbs.inactive { background: url('../images/arrows-uganda.svg') -31px -8px;}
-#slidecontrols a.next.inactive { background: url('../images/arrows-uganda.svg') -54px -8px;}
+#slidecontrols a.next.inactive { background: url('../images/arrows-uganda.svg') -57px -8px;}
 
 
 .thumbnails {padding-bottom: 3em; width: 800px; margin: auto; overflow: hidden; display: none; float: left;}
