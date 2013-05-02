@@ -76,9 +76,9 @@ overflow: hidden;
 position: relative;
 }
 
-.imagewrap {float: left; margin-right: 2em; margin-top: 2px;}
+.imagewrap {float: left; margin-top: 2px;}
 
-
+.longdescription {padding-left: 2em;}
 
 .description {text-align: left; color: #999; margin: 1em 0 0 0; width: 450px; float: left;}
 .description p {margin: 0; font-size: 11px;}
