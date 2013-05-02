@@ -76,21 +76,21 @@ overflow: hidden;
 position: relative;
 }
 
-.imagewrap {float: left; margin-right: 2em;}
+.imagewrap {float: left; margin-right: 2em; margin-top: 2px;}
 
 
 
-.description {text-align: left; color: #999; margin: .5em 0;}
-.description p {margin: .5em 0 0 0; font-size: 11px;}
+.description {text-align: left; color: #999; margin: 1em 0 0 0; width: 450px; float: left;}
+.description p {margin: 0; font-size: 11px;}
 
-#slidecontrols {  margin-left: 165px;}
+#slidecontrols {  float: right; margin: 16px 0 0 0; font-size: 0;}
 
 #slidecontrols span {display: none}
 
-#slidecontrols a {display: block; float: left;}
+#slidecontrols a {display: inline-block; }
 
 #slidecontrols a.prev { width: 6px; height: 9px; background: url('../images/arrows-uganda.svg') -7px -30px;}
-#slidecontrols a.thumbs { width: 9px; height: 9px; background: url('../images/arrows-uganda.svg') -31px -30px; margin: 0 .3em;}
+#slidecontrols a.thumbs { width: 9px; height: 9px; background: url('../images/arrows-uganda.svg') -31px -30px; margin: 0 3px;}
 #slidecontrols a.next { width: 6px; height: 9px; background: url('../images/arrows-uganda.svg') -57px -30px;}
 
 #slidecontrols a.prev:hover { background: url('../images/arrows-uganda.svg') -7px -52px;}
