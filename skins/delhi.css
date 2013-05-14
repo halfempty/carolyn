@@ -24,11 +24,14 @@ a img {border: 0;}
 
 
 
+
 #header { overflow: hidden; margin: auto; text-align: center; }
 #header .menu-navigation-container {margin: 2em 1em;}
 
 #header a {color: #666; text-decoration: none;}
 #header a:hover {color: #a84222;}
+
+#header h1 a {color: #a84222;}
 
 #slidecontrols a {color: #666; text-decoration: none;}
 #slidecontrols a:hover {color: #a84222;}
@@ -54,7 +57,7 @@ a img {border: 0;}
 
 #content {}
 
-.info, .blog  { width: 500px; margin: auto; line-height: 2; }
+.info, .blog  { width: 665px; margin: auto; }
 
 .blog .post {overflow: hidden;}
 .separator { width: 100px; margin: 50px auto; border-top: 1px solid #ccc; display: block;}
