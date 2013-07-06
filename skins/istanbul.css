@@ -1,9 +1,18 @@
 /*  
 Skin Name: Istanbul
+
+font-family:'Century Gothic W01';
+font-family:'CenturyGothicW01-Italic';
+font-family:'Century Gothic W01 Bold';
+font-family:'CenturyGothicW01-BoldIt';
+
 */
 
 
-body {text-align: left; background: #fff; color: #000; font-size: 12px; font-family: Helvetica, sans-serif; margin: 0; padding: 2em 0;}
+body {text-align: left; background: #fff; color: #000; font-size: 12px; font-family: 'Century Gothic W01', Helvetica, sans-serif; margin: 0; padding: 2em 0;}
+
+em, i { font-family: 'CenturyGothicW01-Italic', Helvetica, sans-serif; }
+strong, b {font-family: 'Century Gothic W01 Bold', Helvetica, sans-serif; }
 
 h1 { font-size: 12px; margin: 0; float: left; text-transform: uppercase; font-weight: normal;}
 h2 { font-size: 12px; margin-bottom: 2em;}
@@ -46,7 +55,7 @@ a img {border: 0;}
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
 
-/* Slideshow*/
+/* Slideshow
 
 .gallerycontent { margin-left: 3em;}
 
@@ -61,7 +70,29 @@ position: relative;
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
 .description {text-align: right; color: #999; margin: .5em 0 1em 0;}
+
+
+*/
+
+
+#gallerywrapper {margin: auto;}
+
+#gallerywrapper, .gallery-fade {
+overflow: hidden;
+position: relative;
+}
+
+.imagewrap {float: left; margin-top: 2px;}
+
+.longdescription {padding-left: 2em;}
+
+/* .description {text-align: left; color: #999; margin: 1em 0 0 0; width: 450px; float: left;}*/
+.description {text-align: right; color: #999; margin: .5em 0 1em 0;}
+
+
 .description p {margin: .5em 0 0 0; font-size: 11px;}
+
+/**/
 
 #slidecontrols {text-align: center;}
 #slidecontrols span {display: none}

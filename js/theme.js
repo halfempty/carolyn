@@ -3,13 +3,8 @@ $(document).ready(function() {
 
 	if (!$('html').hasClass("legacy")) {
 
-//	    console.log('current');
-
 		if ( $('.coverimage').length == 0 ) {
 
-			// not "cover" template
-			console.log('not cover');
-			
 		} else {
 			// is "cover" template
 			var imgsrc = $('.coverimage').find('img').attr('src');
@@ -30,7 +25,7 @@ $(document).ready(function() {
 		}
 		
 	} else {
-	    console.log('legacy');		
+
 	}
 
 
