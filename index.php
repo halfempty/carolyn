@@ -1,5 +1,9 @@
 <?php get_header(); ?>
+
 	<div class="blog">
+
+		<?php if ( is_category() && !is_paged() )  marty_wrapped_category_description(); ?>
+
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<div class="post">

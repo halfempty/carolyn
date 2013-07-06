@@ -1,13 +1,28 @@
 /*  
 Skin Name: Delhi
 
-, sans-serif;
-"franklin-gothic-urw"
+
+font-family: "aften-screen",sans-serif;
+font-style: normal;
+font-weight: 400;
+
+font-family: "aften-screen",sans-serif;
+font-style: italic;
+font-weight: 400;
+
+font-family: "aften-screen",sans-serif;
+font-style: normal;
+font-weight: 700;
+
+font-family: "aften-screen-sc",sans-serif;
+font-style: normal;
+font-weight: 400;
 
 */
 
 
-body {text-align: left; background: #fff; color: #8C8C8C; font-size: 16px; line-height: 1.5; font-family: "Aften Screen", serif; margin: 0; padding: 0;}
+body {text-align: left; background: #fff; color: #8C8C8C; font-size: 16px; line-height: 1.5; font-family: "aften-screen",sans-serif; font-style: normal;
+font-weight: 400; margin: 0; padding: 0;}
 
 .page {position: relative; margin: 3em 1em;}
 
@@ -16,27 +31,29 @@ h1 { font-size: 24px; margin: 0; display: inline-block;  font-weight: normal;}
 h2 { font-size: 14px; margin-bottom: 2em;}
 h2 span {font-weight: lighter; padding-left: .5em;}
 
-a {color: #a84222; text-decoration: none;}
+h3 {font-weight: lighter; margin-top: 2em}
+
+a {color: #a8223e; text-decoration: none;}
 a:hover {color: #666;}
 a img {border: 0;}
 
 
-
-
+blockquote {margin: auto 0 0 0; font-size: 1.5em; font-style: italic; clear: both;}
+blockquote p {margin-bottom: 0; }
 
 
 #header { overflow: hidden; margin: auto; text-align: center; }
 #header .menu-navigation-container {margin: 2em 1em;}
 
 #header a {color: #666; text-decoration: none;}
-#header a:hover {color: #a84222;}
+#header a:hover {color: #a8223e;}
 
-#header h1 a {color: #a84222;}
+#header h1 a {color: #a8223e;}
 
 #slidecontrols a {color: #666; text-decoration: none;}
-#slidecontrols a:hover {color: #a84222;}
+#slidecontrols a:hover {color: #a8223e;}
 
-#header .current-menu-item a, #header .current_page_ancestor a, #header .current-post-ancestor a { color: #a84222;}
+#header .current-menu-item a, #header .current_page_ancestor a, #header .current-post-ancestor a { color: #a8223e;}
 
 
 #header ul { padding: 0; list-style: none; display: inline}
@@ -44,16 +61,16 @@ a img {border: 0;}
 
 #header ul li {padding: 0 .8em; white-space: nowrap; }
 
-.line { border-left: 1px solid #a84222; padding-left: 2em !important; margin-left: 1em !important; }
+.line { border-left: 1px solid #a8223e; padding-left: 2em !important; margin-left: 1em !important; }
 
-.subnav ul li a { padding: .5em 0 .5em 1em; }
+
 
 .subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
 .subnav ul {list-style: none; margin: 0; padding: 0; }
 .subnav ul li { margin: 0; padding: 0; display: inline;}
-.subnav ul li a { display: inline-block; padding: .5em; }
+.subnav ul li a { display: inline-block; padding: .5em; color: #666;}
 
-
+.subnav ul li.current_page_item a { color: #a8223e;}
 
 #content {}
 
@@ -70,10 +87,17 @@ a img {border: 0;}
 	
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
+.coverimage {text-align: center; }
 
 .blank .gallerycontent {text-align: center; padding-bottom: 3em;}
 
+.video {max-width: 1000px; margin: auto;}
 
+/* Cover */
+
+body.iscover {background: transparent;}
+
+body.iscover a {color: #fff !important;}
 
 /* Slideshow*/
 
@@ -86,6 +110,7 @@ position: relative;
 .imagewrap { margin: auto;}
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
+.thumbnails .thumb img {width: 150px; height: 150px;}
 
 .textslide .longdescription {width: 665px; margin: auto;}
 .spreadslide .longdescription {padding-left: 2em;}
@@ -102,9 +127,12 @@ a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
 .thumbnails .thumb {display: inline; cursor: pointer; }
 .thumbnails .thumb img {border: .5em solid #fff;}
 	
-.masonrythumbs {margin: auto; width: 870px;}
-.masonrythumbs .thumbnail {float: left; width: 250px; text-align: center; padding: 0 20px 15px 20px;}
-.masonrythumbs .thumbnail h3 {}
-.masonrythumbs .thumbnail h3 a {font-weight: normal;}
+.masonrythumbs {margin: .5em auto 2em auto; width: 1000px; overflow: hidden}
+.masonrythumbs .thumbnail {float: left; width: 300px; text-align: center; }
+.masonrythumbs .first {margin-right: 50px;}
+.masonrythumbs .third {margin-left: 50px;}
+
+
+.masonrythumbs .thumbnail h3 {margin: .75em auto 1.5em 0;}
 
 .spreadslide .imagewrap {float: left; }

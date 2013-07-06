@@ -3,11 +3,16 @@ Skin Name: Honoria Starbuck
 */
 
 
-body {text-align: left; background: #fff; color: #333; font-size: 16px; margin: 0; padding: 2em 0;}
+body {text-align: left; background: #fff; color: #333; font-size: 16px; margin: 0; padding: 2em 2em 2em 2.5em;}
 
-h1 { font-size: 16px; margin: 0; float: left; text-transform: uppercase; font-weight: normal;}
-h2 { font-size: 16px; margin-bottom: 2em;}
-h2 span {font-weight: lighter; padding-left: .5em;}
+h1 { margin: .5em 0; }
+h1 a {display: block; width: 50px; height: 80px; background: url(/files/honoria.svg); background-size: 50px 80px; }
+h1 span {display: none;}
+
+h2 { font-weight: lighter; font-size: 18px;}
+h2 span {font-weight: lighter; display: block; font-size: .8em}
+
+h3 {color: #666; font-weight: lighter; margin-top: 2em; font-size: 18px;}
 
 a {color: #999; text-decoration: none;}
 a:hover {color: #666;}
@@ -15,13 +20,13 @@ a img {border: 0;}
 
 .current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #666; text-transform: uppercase; }
 
-#header { padding: 0 2em 2em 2em; overflow: hidden; margin: auto; }
+#header { padding: 0; float: left; width: 100px; line-height: 1.8}
 
-#header ul { padding: 0; list-style: none; }
-#header ul li {margin: 0; display: inline; }
+#header ul { padding: 0 0 0 .5em; margin: 0; list-style: none; }
+#header li {margin: 0; padding: 0; display: block;}
 
-#header ul { margin: 0 200px; text-align: center; }
-#header ul li {padding: 0 .8em; }
+#header li.line {margin-top: .75em;}
+
 .subnav ul li a { padding: .5em 0 .5em 1em; }
 
 .subnav {clear: both; padding: 1em; text-align: center; overflow: hidden;}
@@ -29,12 +34,14 @@ a img {border: 0;}
 .subnav ul li { margin: 0; padding: 0; display: inline;}
 .subnav ul li a { display: inline-block; padding: .5em; }
 
-#content {}
+#content {max-width: 800px; margin: auto; padding: 0 1em; overflow: hidden;}
 
-.info, .blog  { width: 500px; margin: auto; line-height: 2; }
+.info, .blog  { width: 500px; margin: auto; }
 
 .blog .post {overflow: hidden;}
-.separator { width: 100px; margin: 50px auto; border-top: 1px solid #000; display: block;}
+.separator { width: 100px; margin: 1em 0; border-top: 1px solid #ccc; display: block;}
+
+.categorydescription {border: 1px solid #ccc; padding: 0 1em; margin-bottom: 1em;}
 
 .alignright { display: inline; float: right; margin: 0 0 1em 2em}
 .alignleft { display: inline; float: left; margin: 0 2em 1em 0}
@@ -46,9 +53,11 @@ a img {border: 0;}
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
 
+
+
 /* Slideshow*/
 
-.gallerycontent { margin-left: 3em;}
+.gallerycontent {}
 
 
 #gallerywrapper, .gallery-fade {
@@ -61,30 +70,11 @@ position: relative;
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
 
-.description {text-align: right; color: #999; height: 2em; overflow: hidden; margin: .5em 0 1em 0;}
+.description {text-align: right; color: #999;  margin: .5em 0 1em 0;}
 .description p {margin: .5em 0 0 0; font-size: 11px;}
 
 #slidecontrols {text-align: center;}
-#slidecontrols span {display: none}
 
-#slidecontrols a {display: inline-block;}
-#slidecontrols a.prev { width: 12px; height: 12px; background: url('../images/controls.png') 0 0;}
-#slidecontrols a.thumbs { width: 13px; height: 12px; background: url('../images/controls.png') -13px 0; margin: 0 1em;}
-#slidecontrols a.next { width: 12px; height: 12px; background: url('../images/controls.png') -27px 0;}
-
-#slidecontrols a.prev:hover { background: url('../images/controls.png') 0 -12px;}
-#slidecontrols a.thumbs:hover { background: url('../images/controls.png') -13px -12px;}
-#slidecontrols a.next:hover { background: url('../images/controls.png') -27px -12px;}
-
-#slidecontrols a.prev:active { background: url('../images/controls.png') 0 -36px;}
-#slidecontrols a.thumbs:active { background: url('../images/controls.png') -13px -36px;}
-#slidecontrols a.next:active { background: url('../images/controls.png') -27px -36px;}
-
-#slidecontrols a.prev.inactive { background: url('../images/controls.png') 0 -24px;}
-#slidecontrols a.thumbs.inactive { background: url('../images/controls.png') -13px -24px;}
-#slidecontrols a.next.inactive { background: url('../images/controls.png') -27px -24px;}
-
-a.next.inactive { background: url('../images/controls.png') -27px -24px;}
 
 .thumbnails {width: 870px; margin: auto; overflow: hidden; text-align: center;}
 .thumbnails .thumb {display: inline; cursor: pointer; }

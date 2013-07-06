@@ -1,7 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>  
+<!--[if lte IE 8]> <html class="legacy"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
 
-<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?php 
@@ -40,7 +41,7 @@
 	
 	<div id="header">
 
-	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<h1><a href="<?php bloginfo('url'); ?>"><span><?php bloginfo('name'); ?></span></a></h1>
 
 	<?php wp_nav_menu( array('theme_location' => 'navigation' )); ?>
 

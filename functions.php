@@ -3,6 +3,15 @@ add_action('init', 'register_custom_menu');
 
 function carolyn_theme_scripts_method() {
 
+	// Remove Unnecessary Code
+	// http://www.themelab.com/2010/07/11/remove-code-wordpress-header/
+	remove_action('wp_head', 'rsd_link');
+	remove_action('wp_head', 'wlwmanifest_link');
+	remove_action('wp_head', 'wp_generator');
+	remove_action('wp_head', 'start_post_rel_link');
+	remove_action('wp_head', 'index_rel_link');
+	remove_action('wp_head', 'adjacent_posts_rel_link');
+
 	//JS
 	// Screenfull
 	$screenfull = get_template_directory_uri() . '/js/screenfull.min.js';
@@ -203,6 +212,16 @@ function carolyn_customize_register($wp_customize) {
 
 
 }
+
+
+
+// Category description
+function marty_wrapped_category_description( $before = '<div class="categorydescription">', $after = '</div>'){
+	if ( category_description() !== '' ) {
+		echo $before . category_description() . $after;
+	}
+}
+
 
 
 ?>
