@@ -87,10 +87,17 @@ blockquote p {margin-bottom: 0; }
 	
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
+.coverimage {text-align: center; }
 
 .blank .gallerycontent {text-align: center; padding-bottom: 3em;}
 
+.video {max-width: 1000px; margin: auto;}
 
+/* Cover */
+
+body.iscover {background: transparent;}
+
+body.iscover a {color: #fff !important;}
 
 /* Slideshow*/
 
@@ -103,6 +110,7 @@ position: relative;
 .imagewrap { margin: auto;}
 
 .thumbnails {padding-bottom: 3em; width: 870px; }
+.thumbnails .thumb img {width: 150px; height: 150px;}
 
 .textslide .longdescription {width: 665px; margin: auto;}
 .spreadslide .longdescription {padding-left: 2em;}
@@ -119,9 +127,12 @@ a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
 .thumbnails .thumb {display: inline; cursor: pointer; }
 .thumbnails .thumb img {border: .5em solid #fff;}
 	
-.masonrythumbs {margin: auto; width: 870px;}
-.masonrythumbs .thumbnail {float: left; width: 250px; text-align: center; padding: 0 20px 15px 20px;}
-.masonrythumbs .thumbnail h3 {}
-.masonrythumbs .thumbnail h3 a {font-weight: normal;}
+.masonrythumbs {margin: .5em auto 2em auto; width: 1000px; overflow: hidden}
+.masonrythumbs .thumbnail {float: left; width: 300px; text-align: center; }
+.masonrythumbs .first {margin-right: 50px;}
+.masonrythumbs .third {margin-left: 50px;}
+
+
+.masonrythumbs .thumbnail h3 {margin: .75em auto 1.5em 0;}
 
 .spreadslide .imagewrap {float: left; }
