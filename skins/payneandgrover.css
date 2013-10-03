@@ -20,7 +20,7 @@ a img {border: 0;}
 
 .current-menu-item a, .current_page_ancestor a, .current-post-ancestor a { color: #666; text-transform: uppercase; }
 
-#header { padding: 0; float: left; width: 100px; line-height: 1.8}
+#header { padding: 0; float: left; width: 150px; line-height: 1.8}
 
 #header ul { padding: 0 0 0 .5em; margin: 0; list-style: none; }
 #header li {margin: 0; padding: 0; display: block;}
@@ -53,6 +53,8 @@ a img {border: 0;}
 .simplepage {width: 500px; margin: auto; line-height: 2;}
 .randomimage {text-align: center; }
 
+.wp-caption {text-align: right; color: #999;  margin: .5em 0 1em 0;}
+.wp-caption-text {margin: .5em 0 0 0; font-size: 11px;}
 
 
 /* Slideshow*/
