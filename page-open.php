@@ -4,6 +4,8 @@ Template Name: Open HTML
 
 <?php get_header(); ?>
 
+		<?php the_carolyn_menu('above'); ?>
+
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
@@ -13,6 +15,6 @@ Template Name: Open HTML
 			<p>Page not found.</p>
 		<?php endif; ?>
 
-	<?php carolyn_get_menu($post->ID,'subnav'); ?>
+		<?php the_carolyn_menu('below'); ?>
 
 <?php get_footer(); ?>

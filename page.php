@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+		<?php the_carolyn_menu('above'); ?>
+
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -12,6 +14,6 @@
 			<p>Page not found.</p>
 		<?php endif; ?>
 
-		<?php carolyn_get_menu($post->ID,'subnav'); ?>
+		<?php the_carolyn_menu('below'); ?>
 
 <?php get_footer(); ?>
