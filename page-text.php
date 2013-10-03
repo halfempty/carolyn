@@ -4,6 +4,8 @@ Template Name: Text Page
 
 <?php get_header(); ?>
 
+		<?php the_carolyn_menu('above'); ?>
+
 	<div class="info">
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -15,6 +17,6 @@ Template Name: Text Page
 		<?php endif; ?>
 	</div>
 
-	<?php carolyn_get_menu($post->ID,'subnav'); ?>
+		<?php the_carolyn_menu('below'); ?>
 
 <?php get_footer(); ?>

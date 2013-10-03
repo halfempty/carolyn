@@ -1,0 +1,174 @@
+/*  
+Skin Name: Lana Slezic
+
+
+font-family: "aften-screen",sans-serif;
+font-style: normal;
+font-weight: 400;
+
+font-family: "aften-screen",sans-serif;
+font-style: italic;
+font-weight: 400;
+
+font-family: "aften-screen",sans-serif;
+font-style: normal;
+font-weight: 700;
+
+font-family: "aften-screen-sc",sans-serif;
+font-style: normal;
+font-weight: 400;
+
+*/
+
+
+body {text-align: left; background: #fff; color: #8C8C8C; font-size: 16px; line-height: 1.5; font-family: "aften-screen",sans-serif; font-style: normal;
+font-weight: 400; margin: 0; padding: 0;}
+
+.page {position: relative; margin: 3em 1em;}
+
+h1 { font-size: 24px; margin: 0; display: inline-block;  font-weight: normal;}
+
+h2 { font-size: 14px; margin-bottom: 2em;}
+h2 span {font-weight: lighter; padding-left: .5em;}
+
+h3 {font-weight: lighter; margin-top: 2em}
+
+a {color: #a8223e; text-decoration: none;}
+a:hover {color: #666;}
+a img {border: 0;}
+
+
+blockquote {margin: auto 0 0 0; font-size: 1.5em; font-style: italic; clear: both;}
+blockquote p {margin-bottom: 0; }
+
+
+#header { margin: auto; text-align: center; width: 1000px; }
+#header:before, #header:after { content:""; display:table; clear:both; }
+
+#header a {color: #666; text-decoration: none;}
+#header a:hover {color: #a8223e;}
+
+#header h1 {float: right;}
+#header h1 a {color: #a8223e;}
+
+#slidecontrols a {color: #666; text-decoration: none;}
+#slidecontrols a:hover {color: #a8223e;}
+
+
+ul#menu-navigation { padding: 0; list-style: none; text-align: left; margin: .5em 0 3em 0; float: left; }
+ul#menu-navigation * { margin: 0; padding: 0; list-style: none; }
+
+ul#menu-navigation a { display: block; position: relative; }
+ul#menu-navigation a:hover { text-decoration: none; }
+
+ul#menu-navigation li { margin: 0; float: left; position: relative; padding: 0 1.1em 0 .5em; white-space: nowrap; }
+ul#menu-navigation li:hover { visibility: inherit; } /* fixes IE7 'sticky bug' */
+
+ul#menu-navigation li ul { padding-top: .5em; width: 200px; position: absolute; left: 0; background: rgba(255,255,255,0.9); border-bottom-right-radius: .5em; border-bottom-left-radius: .5em; display: none; }
+ul#menu-navigation li:hover ul { display: block;  z-index: 100; }
+
+ul#menu-navigation li ul li { width: 100%; float: none; padding: 0; }
+ul#menu-navigation li ul li a {padding: .5em; }
+ul#menu-navigation li ul li a:hover {}
+
+	#header .current-menu-item a, #header .current_page_ancestor a, #header .current-post-ancestor a, #header .current-menu-ancestor a { color: #a8223e;}
+	#header .current-menu-item ul a, #header .current_page_ancestor ul a, #header .current-post-ancestor ul a, #header .current-menu-ancestor ul a {color: #666;}
+
+	#header .current-menu-item ul a:hover, 
+	#header .current_page_ancestor ul a:hover, 
+	#header .current-post-ancestor ul a:hover, 
+	#header .current-menu-ancestor ul a:hover 
+	{color: #a8223e;}
+	
+	#header .current-menu-item ul .current_page_ancestor a, 
+	#header .current_page_ancestor ul .current_page_ancestor a, 
+	#header .current-post-ancestor ul .current_page_ancestor a, 
+	#header .current-menu-item ul .current-menu-item a, 
+	#header .current_page_ancestor ul .current-menu-item a, 
+	#header .current-post-ancestor ul .current-menu-item a,
+	#header .current-menu-ancestor ul .current-menu-item a,
+	#header .current-menu-ancestor ul .current-menu-ancestor a
+	{color: #a8223e;}
+
+
+
+	.line { border-left: 1px solid #a8223e; padding-left: 2em !important; margin-left: .4em !important; }
+	.notch a:after {content: ' \f431'; font-family: "Genericons"; font-size: x-small; vertical-align: middle;}
+	.notch ul a:after {content: '';}
+
+
+
+	.woosidebars {clear: both; padding: 0 1em 1em 1em; text-align: center; overflow: hidden;}
+	.woosidebars h3 {display: inline-block; border-bottom: 1px solid #a8223e; padding-bottom: .25em; margin: 0 0 .25em 0; color: #666; }
+	.woosidebars ul {list-style: none; margin: 0; padding: 0; }
+	.woosidebars ul li { margin: 0; padding: 0; display: inline;}
+	.woosidebars ul li a { display: inline-block; padding: .5em; color: #666;}
+	.woosidebars ul li a:hover {color: #a8223e;}
+
+	.woosidebars ul li.current_page_item a { color: #a8223e;}
+	
+	
+#content {}
+
+.info, .blog  { width: 665px; margin: auto; }
+
+.blog .post {overflow: hidden;}
+.separator { width: 100px; margin: 50px auto; border-top: 1px solid #ccc; display: block;}
+
+.alignright { display: inline; float: right; margin: 0 0 1em 2em}
+.alignleft { display: inline; float: left; margin: 0 2em 1em 0}
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.credit {font-size: .9em; float: left; padding-top: 1em;}
+	
+.simplepage {width: 500px; margin: auto; line-height: 2;}
+.randomimage {text-align: center; }
+.coverimage {text-align: center; }
+
+.blank .gallerycontent {text-align: center; padding-bottom: 3em;}
+
+.video {max-width: 1000px; margin: auto;}
+
+/* Cover */
+
+body.iscover {background: transparent;}
+
+body.iscover a {color: #fff !important;}
+
+/* Slideshow*/
+
+#gallerywrapper, .gallery-fade {
+overflow: hidden;
+margin: auto;
+position: relative;
+}
+
+.imagewrap { margin: auto;}
+
+.thumbnails {padding-bottom: 3em; width: 870px; }
+.thumbnails .thumb img {width: 150px; height: 150px;}
+
+.textslide .longdescription {width: 665px; margin: auto;}
+.spreadslide .longdescription {padding-left: 2em;}
+
+.description {text-align: right; color: #999; margin: .5em 0 1em 0;}
+.description p {margin: .5em 0 0 0; font-size: 11px;}
+
+#slidecontrols {text-align: center;}
+
+a.cursornext { cursor: url("../images/cursor-next.cur"), pointer; }
+a.cursorprev { cursor: url("../images/cursor-prev.cur"), pointer; }
+
+.thumbnails {width: 870px; margin: auto; overflow: hidden; display: none; text-align: center;}
+.thumbnails .thumb {display: inline; cursor: pointer; }
+.thumbnails .thumb img {border: .5em solid #fff;}
+	
+.masonrythumbs {margin: .5em auto 2em auto; width: 1000px; overflow: hidden}
+.masonrythumbs .thumbnail {float: left; width: 300px; text-align: center; }
+.masonrythumbs .first {margin-right: 50px;}
+.masonrythumbs .third {margin-left: 50px;}
+
+
+.masonrythumbs .thumbnail h3 {margin: .75em auto 1.5em 0;}
+
+.spreadslide .imagewrap {float: left; }

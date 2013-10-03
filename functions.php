@@ -66,6 +66,26 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 
 
+// Sidebars
+// http://justintadlock.com/archives/2010/11/08/sidebars-in-wordpress
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+
+function my_register_sidebars() {
+
+	register_sidebar(
+		array(
+			'id' => 'woosidebars',
+			'name' => __( 'WooSidebars' ),
+			'before_widget' => '<div id="%1$s" class="woosidebars %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+
+}
+
 
 
 
@@ -117,8 +137,8 @@ function carolyn_customize_register($wp_customize) {
 					'nicename'     => 'Payne and Grover',
 				); ?>
 				<?php $skins[] = array(
-					'slug'           => 'delhi',
-					'nicename'     => 'Delhi',
+					'slug'           => 'lanaslezic',
+					'nicename'     => 'Lana Slezic',
 				); ?>
 				<?php $skins[] = array(
 					'slug'           => 'uganda',
@@ -129,6 +149,37 @@ function carolyn_customize_register($wp_customize) {
 				<option value="<?php echo $skin['slug'] ?>"
 					<?php if ( $skin['slug'] == esc_textarea( $this->value() ) ) echo ' selected="selected"'; ?>
 				><?php echo $skin['nicename'] ?></option>
+				<?php endforeach; ?>
+			</select>
+			</label>
+			<?php
+		}
+	}
+
+
+
+	class Carolyn_Menu_Type_Control extends WP_Customize_Control {
+		public $type = 'select';
+
+		public function render_content() {
+			?>
+			<label>
+			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+			<select <?php $this->link(); ?>>
+				<?php $menutypes = array(); ?>
+				<?php $menutypes[] = array(
+					'slug'           => 'marty',
+					'nicename'     => 'Marty Menu',
+				); ?>
+				<?php $menutypes[] = array(
+					'slug'           => 'woo',
+					'nicename'     => 'Woo Menu',
+				); ?>
+
+				<?php foreach ($menutypes as $menutype ) : ?>
+				<option value="<?php echo $menutype['slug'] ?>"
+					<?php if ( $menutype['slug'] == esc_textarea( $this->value() ) ) echo ' selected="selected"'; ?>
+				><?php echo $menutype['nicename'] ?></option>
 				<?php endforeach; ?>
 			</select>
 			</label>
@@ -170,7 +221,7 @@ function carolyn_customize_register($wp_customize) {
 	    'type'     => 'checkbox',
 	) );
 
-	
+
 
 	$wp_customize->add_setting( 'carolyn_theme_options[typekit_js]', array(
 		'type'           => 'option',
