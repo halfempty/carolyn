@@ -1,0 +1,16 @@
+/*  
+Skin Name: T.W. Ryan
+*/
+
+body {font-family: "Metric", sans-serif; font-size: 25px; line-height: 1.2; margin: 0; padding: 1.75em 2em; font-weight: 100; }
+
+a { color: rgb(25,30,196); text-decoration: none; }
+
+h1 { font-size: 25px; background: rgb(25,30,196); float: left; clear: left; margin: 0; font-weight: normal; padding: .4em .4em 0 .4em; font-weight: 100; }
+
+#header { text-transform: uppercase; }
+#header a {  color: #fff;}
+
+#header ul {list-style: none; margin: 0; padding: 0; overflow: hidden; clear: left;}
+#header ul li { margin: 0; padding: 0; background: rgb(25,30,196); float: left; clear: left; padding: .4em .4em 0 .4em }
+#header ul li.spacer {padding-right: 1.125em;}

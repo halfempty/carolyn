@@ -123,26 +123,30 @@ function carolyn_customize_register($wp_customize) {
 				<?php $skins[] = array(
 					'slug'           => 'istanbul',
 					'nicename'     => 'Istanbul',
-				); ?>
-				<?php $skins[] = array(
+				);
+				$skins[] = array(
 					'slug'           => 'lagos',
 					'nicename'     => 'Lagos',
-				); ?>
-				<?php $skins[] = array(
+				);
+				$skins[] = array(
 					'slug'           => 'montreal',
 					'nicename'     => 'Montreal',
-				); ?>
-				<?php $skins[] = array(
+				);
+				$skins[] = array(
 					'slug'           => 'payneandgrover',
 					'nicename'     => 'Payne and Grover',
-				); ?>
-				<?php $skins[] = array(
+				);
+				$skins[] = array(
 					'slug'           => 'lanaslezic',
 					'nicename'     => 'Lana Slezic',
-				); ?>
-				<?php $skins[] = array(
+				);
+				$skins[] = array(
 					'slug'           => 'uganda',
 					'nicename'     => 'Uganda',
+				);
+				$skins[] = array(
+					'slug'           => 'twryan',
+					'nicename'     => 'T.W. Ryan',
 				); ?>
 
 				<?php foreach ($skins as $skin ) : ?>
