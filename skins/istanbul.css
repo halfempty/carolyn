@@ -82,7 +82,7 @@ overflow: hidden;
 position: relative;
 }
 
-.imagewrap {float: left; margin-top: 2px;}
+.imagewrap {margin: auto;}
 
 .longdescription {padding-left: 2em;}
 
@@ -93,6 +93,8 @@ position: relative;
 .description p {margin: .5em 0 0 0; font-size: 11px;}
 
 /**/
+
+
 
 #slidecontrols {text-align: center;}
 #slidecontrols span {display: none}
