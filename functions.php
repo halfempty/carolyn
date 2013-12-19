@@ -34,7 +34,7 @@ function carolyn_theme_scripts_method() {
  	if ( isset( $options['skincss'] ) && $options['skincss'] !== '' ) :
 	    $skinstyle = get_template_directory_uri() . '/skins/'. $options['skincss'] . '.css'; 
 	else :
-	    $skinstyle = get_template_directory_uri() . '/skins/istanbul.css'; 
+	    $skinstyle = get_template_directory_uri() . '/skins/carolyndrake.css'; 
 	endif;
 
     wp_register_style('skinstyle',$skinstyle);
@@ -121,8 +121,8 @@ function carolyn_customize_register($wp_customize) {
 			<select <?php $this->link(); ?>>
 				<?php $skins = array(); ?>
 				<?php $skins[] = array(
-					'slug'           => 'istanbul',
-					'nicename'     => 'Istanbul',
+					'slug'           => 'carolyndrake',
+					'nicename'     => 'Carolyn Drake',
 				);
 				$skins[] = array(
 					'slug'           => 'lagos',
